@@ -1,0 +1,48 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="light_black">#262626</color>
+    <color name="deep_blue">#207BAA</color>
+    <color name="blue">#2D7C9D</color>
+    <color name="black">#000000</color>
+    <color name="light_blue">#3E9AC5</color>
+    <color name="ocean_blue">#2D7C9D</color>
+    <color name="gray">#C5C8CD</color>
+    <color name="light_gray">#F1F1F1</color>
+    <color name="offwhite">#F6F6F6</color>
+    <color name="whitesmoke_color">#f9f9f9</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="green_color">#00ff00</color>
+    <color name="bluishwhite_color">#e0e1f5</color>
+    <color name="bluish_color">#59B4E0</color>
+    <color name="dark_bluishwhite_color">#8BA5D6</color>
+    <color name="red_color">#d80000</color>
+    <color name="dark_red_color">#3C0000</color>
+    <color name="deep_green_color">#76e056</color>
+    <color name="test_color">#9d4e2d</color>
+    <color name="jira_color">#9d4e2d</color>
+    
+    
+    <color name="help_button_view">#ffcccccc</color>
+ <!-- help button view background color -->
+	<color name="help_view">#ff404040</color>
+ <!-- background color for entire help view -->
+	<color name="result_minor_text">#ffc0c0c0</color>
+ <!-- source language text/label text color. For example, "OCR English" -->
+	<color name="result_text">#ffffffff</color>
+ <!-- OCR result text color -->
+	<color name="result_view">#b0000000</color>
+ <!-- result view background color -->
+	<color name="status_text">#ffffffff</color>
+ <!-- status_view_top/status_view_bottom text color -->
+	<color name="status_top_text_background">#ffffffff</color>
+ <!-- status_view_top text background color -->
+	<color name="translation_text">#00ccff</color>
+ <!-- translation text color -->
+	<color name="viewfinder_corners">#ffffffff</color>
+ <!-- four corner elements for viewfinder -->
+	<color name="viewfinder_frame">#ffff0000</color>
+ <!-- viewfinder rectangle -->
+	<color name="viewfinder_mask">#60000000</color>
+ <!-- viewfinder exterior darkened area -->
+</resources>

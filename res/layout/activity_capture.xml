@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/image_grid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/camrea_capture_preview_height"
+            android:contentDescription="grid" />
+
+        <RelativeLayout
+            android:id="@+id/rlBottomPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/image_grid"
+            android:background="@android:color/black" >
+
+            <Button
+                android:id="@+id/btnCapture"
+                style="@style/ButtonStyle"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:padding="10sp"
+                android:text="Capture" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/ButtonStyle"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnCapture"
+                android:layout_alignBottom="@+id/btnCapture"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="36dp"
+                android:padding="10sp"
+                android:text="Cancel" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

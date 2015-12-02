@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <!-- <item name="buttonBarStyle">@style/ButtonBar</item> -->
+        <!-- <item name="buttonBarButtonStyle">@style/ButtonBarButton</item> -->
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:shadowColor">@color/black_overlay</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/bluish_color</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:shadowDx">-2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="Title1TextViewStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/jira_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowColor">@color/black_overlay</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="headerTextViewStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/offwhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowColor">@color/black_overlay</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="Title2TextViewStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/jira_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">-2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="InfoTextViewStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">-2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="NumberPadButtonStyle">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">-2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:background">@drawable/numberpad_button_selector</item>
+    </style>
+
+    <style name="NumberPadNextButtonStyle">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <!-- <item name="android:background">@drawable/numberpad_next_button_selector</item> -->
+        <item name="android:background">@drawable/numberpad_button_selector</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="NumberPadCancelButtonStyle">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <!-- <item name="android:background">@drawable/numberpad_cancel_button_selector</item> -->
+        <item name="android:background">@drawable/numberpad_button_selector</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="NumberPadClearButtonStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="CashDepositDisplayStyle">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:background">@drawable/amount_display_backgound</item>
+    </style>
+
+    <style name="CashAmountDisplayStyle">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:background">@drawable/amount_display_backgound</item>
+    </style>
+
+    <!-- <style name="AccountNumberDisplayStyle"> -->
+    <!-- <item name="android:textSize">20sp</item> -->
+    <!-- <item name="android:textColor">@color/black</item> -->
+    <!-- <item name="android:textStyle">bold</item> -->
+    <!-- <item name="android:shadowDx">2</item> -->
+    <!-- <item name="android:shadowDy">0</item> -->
+    <!-- <item name="android:shadowRadius">2</item> -->
+    <!-- <item name="android:background">@drawable/amount_display_backgound</item> -->
+    <!-- </style> -->
+
+
+    <!-- <style name="LogOutButtonStyle"> -->
+    <!-- <item name="android:background">@drawable/logout_button_selector</item> -->
+    <!-- <item name="android:textSize">14sp</item> -->
+    <!-- <item name="android:textColor">@color/white_color</item> -->
+    <!-- <item name="android:textStyle">bold</item> -->
+    <!-- <item name="android:shadowDx">2</item> -->
+    <!-- <item name="android:shadowDy">0</item> -->
+    <!-- <item name="android:shadowRadius">2</item> -->
+    <!-- <item name="android:text">@string/btntext_logout_bankmenu</item> -->
+    <!-- </style> -->
+
+    <style name="LogInHeaderTextViewStyle">
+        <item name="android:text">@string/label_agentlogin</item>
+        <item name="android:textSize">@dimen/textsize__label_login</item>
+        <item name="android:textColor">@color/ocean_blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:shadowDx">-2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="HeaderTextViewStyle">
+        <item name="android:textColor">@color/ocean_blue</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:shadowDx">-2</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="MenuTextViewStyle">
+        <item name="android:textSize">@dimen/textsize__menutext_bankmenu</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/whitesmoke_color</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="BankMenuTextViewStyle">
+        <item name="android:textSize">@dimen/textsize__menutext_bankmenu</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/whitesmoke_color</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="CustomerServicesMenuTextViewStyle">
+        <item name="android:textSize">@dimen/textsize__menutext_bankmenu</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowColor">@color/whitesmoke_color</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="LogOutButtonStyle">
+
+        <!-- <item name="android:background">@drawable/logout_button_selector</item> -->
+
+        <item name="android:background">@drawable/logout_selector</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:width">@dimen/btn_logoutwidth</item>
+        <item name="android:height">@dimen/btn_logoutheight</item>
+        <!-- <item name="android:text">@string/btntext_logout_bankmenu</item> -->
+    </style>
+
+    <style name="CustomerNameTextViewStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="AmountInWordsTextViewStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/bluish_color</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="AmountTextViewStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/bluish_color</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="CustomerPictureStyle"></style>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/blue</item>
+    </style>
+
+</resources>
